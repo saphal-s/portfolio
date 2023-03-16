@@ -1,0 +1,797 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  background-color: rgb(2, 74, 137);
+  padding: 16px 0px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar nav h2 {
+  color: #fff;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul .nav_link {
+  list-style: none;
+  font-size: 17px;
+  margin: 4px 20px 0px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar ul .active {
+  border-bottom: 3px solid #fff;
+}
+.navbar ul .nav_link::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid #fff;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.navbar ul .nav_link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar ul .nav_link::after {
+  transform-origin: 100% 50%;
+}
+.navbar ul .nav_link::after {
+  transform-origin: 0% 50%;
+}
+
+/*
+
+ responsiveness of nav bar start
+
+  */
+
+@media screen and (max-width: 940px) {
+  .container {
+    width: 90%;
+  }
+  .navbar ul .nav_link {
+    margin: 4px 10px 0px 10px;
+  }
+}
+
+.menu-bar div {
+  width: 35px;
+  height: 2.2px;
+  background-color: #fff;
+}
+
+.nav-list .mid-bar {
+  margin: 8px 0px;
+  width: 45px;
+  margin-left: -5px;
+}
+
+.nav-list {
+  position: relative;
+}
+.menu-bar {
+  position: absolute;
+  height: 30px !important;
+  width: 50px !important;
+  background-color: transparent !important;
+  margin-top: -8px;
+  z-index: 2;
+  cursor: pointer;
+  padding: 10px 0px 0px 10px;
+  right: 0;
+}
+.nav-list .menu-bar {
+  display: none;
+}
+.menu-bar:hover .main-nav {
+  display: block;
+  background-color: #000;
+  height: 90vh;
+  width: 200px;
+  right: 0;
+  position: absolute;
+  padding-top: 40px;
+  margin-top: 10px !important;
+}
+@media screen and (max-width: 840px) {
+  .container {
+    width: 100%;
+  }
+  .nav-list .menu-bar {
+    display: block;
+  }
+  .nav-list .main-nav {
+    display: none;
+  }
+}
+
+/*
+
+ responsiveness of nav bar end
+
+  */
+
+/*  
+  
+  body-part styling start
+
+*/
+
+.first-section {
+  background-color: rgb(2, 74, 137);
+}
+
+.banner {
+  height: 85vh;
+  width: 80%;
+  margin: auto;
+}
+.banner .intro {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  padding-top: 140px;
+}
+.intro h1 {
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-bottom: 20px;
+}
+.intro h1 span {
+  color: #fadd04;
+}
+.intro h3 {
+  color: #fff;
+  font-size: 25px;
+}
+.intro p {
+  color: #fadd04;
+  padding: 15px 10px 50px 10px;
+  font-size: 17px;
+  font-weight: 550;
+}
+.hire_resumt_button button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+  cursor: pointer;
+}
+.hire_resumt_button .hire {
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: rgb(2, 74, 137);
+}
+.hire_resumt_button .hire:hover {
+  background: #fff;
+  color: rgb(2, 74, 137);
+}
+.hire_resumt_button .resume-btn {
+  background-color: #fff;
+  color: rgb(2, 74, 137);
+  border: none;
+}
+.curve-img {
+  width: 100%;
+  margin-top: -90px;
+}
+
+@media screen and (max-width: 940px) {
+  .curve-img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+/*  
+  
+  body-part styling end
+
+*/
+
+/* 
+
+about styling start
+
+*/
+.about {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.image div {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background-color: #fadd04;
+  box-shadow: rgba(49, 148, 234, 0.48) 6px 2px 16px 0px,
+    rgba(30, 122, 184, 0.8) -6px -2px 16px 0px;
+}
+.image img {
+  height: 350px;
+  width: 280px;
+}
+.about .about-content {
+  width: 500px;
+}
+
+.head h2 {
+  font-size: 33px;
+}
+
+.head h2::after {
+  content: "";
+  width: 40px;
+  border-bottom: 4px solid rgb(2, 74, 137);
+  display: block;
+}
+
+.about .about-content p {
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.social_icons {
+  display: flex;
+  padding-bottom: 15px;
+}
+.social_icons .icon {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: rgb(2, 74, 137);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 10px;
+  cursor: pointer;
+}
+.social_icons .icon:hover {
+  background-color: #fadd04;
+}
+
+.social_icons .icon i {
+  font-size: 17px;
+  margin-top: 14px;
+  padding-left: 16px;
+  color: #fff;
+}
+.resume-button {
+  margin-top: 15px;
+}
+.resume-button button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: rgb(2, 74, 137);
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(2, 74, 137);
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.resume-button button:hover {
+  background-color: rgb(2, 74, 137);
+  color: #fff;
+}
+@media screen and (max-width: 940px) {
+  .about {
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+  .about .about-content {
+    width: 350px !important;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+
+  .image div {
+    width: 300px;
+    height: 380px;
+  }
+  .image img {
+    height: 330px;
+    width: 280px;
+  }
+}
+
+/* 
+
+about styling end
+
+*/
+/* 
+
+resume styling start
+
+*/
+.resume-section {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0px;
+}
+.resume-section .head {
+  text-align: center;
+}
+.resume-section .head h2::after {
+  margin: auto;
+}
+.resume {
+  display: flex;
+  justify-content: space-between;
+}
+.resume_expertise,
+.education,
+.skills,
+.language {
+  width: 28%;
+  border: 1px solid #fadd04;
+  margin: 30px 0px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.languages {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+.expertise-section,
+.education-section,
+.skill-section {
+  border-bottom: 1px solid #ccc;
+}
+.expertise-section h3,
+.education-section h3,
+.skill-section h3,
+.language-section h3 {
+  color: rgb(2, 74, 137);
+  font-size: 23px;
+}
+.expertise-section h3::after,
+.education-section h3::after,
+.skill-section h3::after,
+.language-section h3::after {
+  content: "";
+  width: 30px;
+  display: block;
+  border-bottom: 3px solid #fa2d04;
+  margin-top: 5px;
+}
+.expertise-section .duration,
+.education-section .duration {
+  padding-top: 12px;
+  padding-bottom: 10px !important;
+  color: #979696;
+}
+.expertise-section .position,
+.education-section .position {
+  padding-bottom: 13px;
+  color: rgb(2, 74, 137);
+  font-size: 17px;
+}
+.expertise-section p,
+.education-section p {
+  text-align: justify;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.progress {
+  padding-top: 15px;
+}
+.progress h4 {
+  color: rgb(2, 74, 137);
+  padding: 10px 0px 10px 0px;
+}
+.progress-bar {
+  background-color: #959595;
+  width: 100%;
+  height: 7px;
+  border-radius: 5px;
+}
+.progress-bar .html {
+  background-color: #fadd04;
+  width: 90%;
+  height: 7px;
+  border-radius: 5px;
+}
+.progress-bar .javascript {
+  background-color: #fadd04;
+  width: 85%;
+  height: 7px;
+  border-radius: 5px;
+}
+.progress-bar .react {
+  background-color: #fadd04;
+  width: 80%;
+  height: 7px;
+  border-radius: 5px;
+}
+.progress-bar .python {
+  background-color: #fadd04;
+  width: 65%;
+  height: 7px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 940px) {
+  .resume-section {
+    width: 90%;
+  }
+  .resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .resume_expertise,
+  .education,
+  .skills,
+  .language {
+    width: 80% !important;
+    margin: 20px auto;
+  }
+}
+/* 
+
+resume styling end
+
+*/
+.mid-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(2, 74, 137);
+  padding: 20px 0px;
+}
+.mid-card {
+  display: flex;
+  margin: 10px;
+}
+.mid-card i {
+  font-size: 50px;
+  margin: 10px;
+  color: #fff;
+}
+.mid-card .mid-icon {
+  border-right: 3px solid #fadd04;
+  margin: 10px;
+}
+.mid-card .mid-content {
+  color: #fff;
+  margin-top: 12px;
+}
+
+/* 
+
+service styling start
+
+*/
+.service-section {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0px;
+}
+.service-section .head {
+  text-align: center;
+}
+.service-section .head h2::after {
+  margin: auto;
+}
+.service-section .service {
+  padding-top: 40px;
+}
+.service-card {
+  width: 28%;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-bottom: 60px;
+}
+.service-icon {
+  height: 60px;
+  width: 60px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid rgb(2, 74, 137);
+  margin-top: -50px;
+}
+.service-icon i {
+  font-size: 22px;
+  margin-top: 19px;
+  color: rgb(2, 74, 137);
+}
+.service-card h4 {
+  padding: 15px 0px;
+}
+.service-card p {
+  padding-bottom: 15px;
+  font-size: 17px;
+}
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 940px) {
+  .service-section {
+    width: 90%;
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .service-card {
+    width: 80% !important;
+    margin: 30px auto;
+  }
+}
+/* 
+
+service styling end
+
+*/
+
+/* 
+
+testimonial styling start
+
+*/
+.testimonial {
+  background-image: url("./image/back.jpg");
+  min-height: 380px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+.testimonial .head {
+  text-align: center;
+  color: #fff;
+}
+.testimonial .head h2::after {
+  margin: auto;
+  border-color: #fadd04;
+}
+.testimonial-card {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.testimonial-card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.testimonial-card p {
+  font-size: 18px;
+  padding: 10px 0px;
+}
+.testimonial-card p i {
+  color: #fadd04;
+  font-size: 25px;
+}
+.testimonial-card h5 {
+  font-size: 24px;
+  padding: 10px 0px 0px 0px;
+}
+
+/* 
+
+blog styling start
+
+*/
+.blog {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0px;
+}
+.blog .head {
+  text-align: center;
+}
+.blog .head h2::after {
+  margin: auto;
+}
+.blogs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0px 0px 0px;
+}
+.blog .blog-card {
+  width: 310px;
+  margin: 20px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.blog .blog-card .content {
+  padding: 0px 20px 15px 20px;
+}
+.blog .blog-card img {
+  width: 100%;
+  height: 200px;
+}
+.blog .blog-card .title {
+  font-size: 25px;
+}
+.blog .cat-date {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog .category span {
+  padding: 4px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(2, 74, 137);
+  border-radius: 25px;
+}
+.blog .date {
+  font-weight: bold;
+  color: rgb(2, 74, 137);
+}
+
+.blog .fa-calendar {
+  font-size: 19px;
+  margin: 0px 3px;
+  color: #000;
+}
+
+/* 
+
+blog styling end
+
+*/
+
+/* 
+
+contact styling start
+
+*/
+.contact {
+  padding: 50px 20px 130px 20px;
+  background-color: rgb(2, 74, 137);
+}
+.contact-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.contact .head {
+  text-align: center;
+  color: #fff;
+}
+.contact .head h2::after {
+  margin: auto;
+  border-color: #fadd04;
+}
+.contact-details {
+  width: 50%;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+.contact-details .social_icons {
+  justify-content: center;
+}
+.contact-details .social_icons i {
+  margin-left: -15px !important;
+}
+.contact-details h2 {
+  text-align: center;
+}
+.contact-details p {
+  font-size: 19px;
+  font-weight: 550;
+}
+.contact-details p i {
+  color: #fff;
+  margin: 5px;
+}
+.contact-form {
+  width: 50%;
+  margin: 40px auto 0px auto;
+}
+
+.contactForm {
+  padding: 20px 40px 5px 40px;
+  background: #fff;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: rgb(2, 74, 137);
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox textarea:focus ~ span {
+  color: black;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: rgb(2, 74, 137);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+}
+@media screen and (max-width: 940px) {
+  .contact-section {
+    width: 90%;
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-details,
+  .contact-form {
+    width: 100%;
+    margin: auto;
+  }
+  .contactForm {
+    margin-top: 30px;
+  }
+}
+/* 
+
+contact styling end
+
+*/
+.footer p {
+  text-align: center;
+  font-size: 19px;
+  color: rgb(2, 74, 137);
+  padding: 20px;
+}
